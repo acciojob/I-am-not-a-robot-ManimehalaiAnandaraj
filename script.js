@@ -1,9 +1,9 @@
 //your code here
  const imageUrls = [
             'https://picsum.photos/id/237/200/300',
-            'https://via.placeholder.com/150/00FF00/FFFFFF?text=Image2',
-            'https://via.placeholder.com/150/0000FF/FFFFFF?text=Image3',
-            'https://via.placeholder.com/150/FFFF00/000000?text=Image4',
+            'https://picsum.photos/seed/picsum/200/300',
+            'https://picsum.photos/200/300.jpg',
+            'https://picsum.photos/200/300/',
             'https://via.placeholder.com/150/FF00FF/FFFFFF?text=Image5'
         ];
         
