@@ -4,7 +4,7 @@
             'https://picsum.photos/seed/picsum/200/300',
             'https://picsum.photos/200/300.jpg',
             'https://picsum.photos/200/300/',
-            'https://via.placeholder.com/150/FF00FF/FFFFFF?text=Image5'
+            'https://picsum.photos/id/237/200/300'
         ];
         
         // DOM elements
@@ -45,8 +45,8 @@
                 
                 const img = document.createElement('img');
                 img.src = url;
-                img.width = 150;
-                img.height = 150;
+                img.width = 50;
+                img.height = 50;
                 
                 imgBox.appendChild(img);
                 imageContainer.appendChild(imgBox);
