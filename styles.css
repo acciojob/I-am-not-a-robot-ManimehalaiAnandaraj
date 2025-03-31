@@ -3,17 +3,17 @@
 }
 
 .img2 {
-  content: url("");
+  content: url("https://picsum.photos/seed/picsum/200/300");
 }
 
 .img3 {
-  content: url("");
+  content: url("https://picsum.photos/200/300.jpg");
 }
 .img4 {
-  content: url("");
+  content: url("https://picsum.photos/200/300/");
 }
 .img5 {
-  content: url("");
+  content: url("'https://picsum.photos/id/237/200/300");
 }
 
 img {
