@@ -46,8 +46,8 @@
                 
                 const img = document.createElement('img');
                 img.src = url;
-                img.width = 50;
-                img.height = 50;
+                img.width = 100;
+                img.height = 100;
                 
                 imgBox.appendChild(img);
                 imageContainer.appendChild(imgBox);
