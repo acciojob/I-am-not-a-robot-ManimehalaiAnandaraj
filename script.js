@@ -59,17 +59,18 @@
         function handleImageClick(event) {
             const clickedBox = event.currentTarget;
             const imageUrl = clickedBox.dataset.url;
-            const index = clickedBox.dataset.index;
+			
+            // const index = clickedBox.dataset.index;
             
             // If already selected, deselect it
-            if (selectedImages.includes(index)) {
+            if (selectedImages.includes(imageUrl)) {
                 clickedBox.classList.remove('selected');
-                selectedImages = selectedImages.filter(i => i !== index);
+                selectedImages = selectedImages.filter(url => url !== imageUrl);
             } 
             // If less than 2 selected, select it
             else if (selectedImages.length < 2) {
                 clickedBox.classList.add('selected');
-                selectedImages.push(index);
+                selectedImages.push(imageUrl);
             }
             
             // Show reset button if at least one image is selected
@@ -83,9 +84,9 @@
         function verifySelection() {
             if (selectedImages.length !== 2) return;
             
-            const boxes = document.querySelectorAll('.image-box');
-            const firstUrl = boxes[selectedImages[0]].dataset.url;
-            const secondUrl = boxes[selectedImages[1]].dataset.url;
+           // const boxes = document.querySelectorAll('.image-box');
+           // const firstUrl = boxes[selectedImages[0]].dataset.url;
+           // const secondUrl = boxes[selectedImages[1]].dataset.url;
             
             if (firstUrl === secondUrl) {
                 messageDiv.textContent = "You are a human, Congratulations!";
