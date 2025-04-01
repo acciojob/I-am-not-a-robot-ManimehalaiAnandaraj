@@ -105,7 +105,7 @@
                 if (box) box.classList.remove('selected');
             });
             selectedImages = [];
-            verifyButton.style.display = 'none';
+            verifyButton.style.display = 'visible';
             resetButton.style.display = 'none';
             messageDiv.textContent = '';
         }
