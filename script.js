@@ -84,9 +84,9 @@
         function verifySelection() {
             if (selectedImages.length !== 2) return;
             
-           // const boxes = document.querySelectorAll('.image-box');
-           // const firstUrl = boxes[selectedImages[0]].dataset.url;
-           // const secondUrl = boxes[selectedImages[1]].dataset.url;
+           const boxes = document.querySelectorAll('.image-box');
+           const firstUrl = boxes[selectedImages[0]].dataset.url;
+            const secondUrl = boxes[selectedImages[1]].dataset.url;
             
             if (firstUrl === secondUrl) {
                 messageDiv.textContent = "You are a human, Congratulations!";
