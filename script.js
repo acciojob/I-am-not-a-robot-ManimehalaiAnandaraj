@@ -84,10 +84,8 @@
         function verifySelection() {
             if (selectedImages.length !== 2) return;
             
-           const boxes = document.querySelectorAll('.image-box');
-           const firstUrl = boxes[selectedImages[0]].dataset.url;
-            const secondUrl = boxes[selectedImages[1]].dataset.url;
-            
+           const [firstUrl, secondUrl] = selectedImages;
+			
             if (firstUrl === secondUrl) {
                 messageDiv.textContent = "You are a human, Congratulations!";
                 messageDiv.style.color = "green";
@@ -101,8 +99,8 @@
         
         // Reset the selection
         function resetSelection() {
-            selectedImages.forEach(index => {
-                const box = document.querySelector(`.image-box[data-index="${index}"]`);
+            selectedImages.forEach(url => {
+                const box = document.querySelector(`.image-box[data-url="${url}"]`);
                 if (box) box.classList.remove('selected');
             });
             selectedImages = [];
