@@ -95,7 +95,7 @@
                 messageDiv.style.color = "red";
             }
             
-            verifyButton.style.display = 'none';
+            verifyButton.style.display = 'visible';
         }
         
         // Reset the selection
