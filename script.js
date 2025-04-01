@@ -39,7 +39,8 @@
             // Create image elements
             shuffledImages.forEach((url, index) => {
                 const imgBox = document.createElement('div');
-                imgBox.className = 'image-box';
+                imgBox.className = `image-box img${index +1}`;
+				
                 imgBox.dataset.index = index;
                 imgBox.dataset.url = url;
                 
